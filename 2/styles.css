@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  background: #050505;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Courier New', monospace; /* Courier is wider/bolder */
+}
+
+canvas {
+  transform: scaleX(-1); /* Mirror the feed behavior */
+  max-width: 100%;
+  max-height: 100%;
+  /* CSS Glow Effect for that CRT Monitor look */
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.3));
+}
+
+#ui {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #555;
+  font-size: 12px;
+  z-index: 10;
+}
